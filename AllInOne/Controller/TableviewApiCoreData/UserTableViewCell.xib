@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="276" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="AllInOne" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.fill.badge.gearshape" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MlT-z3-nvc">
+                        <rect key="frame" x="75" y="10.5" width="151.5" height="148"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="roO-Qa-cUY"/>
+                            <constraint firstAttribute="height" constant="150" id="z1I-Po-Ffz"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SK0-Ny-SnJ" userLabel="label Stack View">
+                        <rect key="frame" x="104.5" y="170" width="91" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2w-Rt-0jH">
+                                <rect key="frame" x="0.0" y="0.0" width="91" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJq-G5-9ue">
+                                <rect key="frame" x="0.0" y="28.5" width="91" height="15.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="hca-ey-Sz5" userLabel="Btn Stack View">
+                        <rect key="frame" x="66.5" y="224" width="167.5" height="31"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-2p-BEe">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="personInfoBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hvK-lF-h7u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kC-Sz-ozA">
+                                <rect key="frame" x="60" y="0.0" width="45" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system"/>
+                                <connections>
+                                    <action selector="persnBirthDatePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dow-Gr-rxy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBO-Yd-Z1V">
+                                <rect key="frame" x="123" y="0.0" width="44.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="personLocationPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LT3-Gt-Cce"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hca-ey-Sz5" firstAttribute="top" secondItem="SK0-Ny-SnJ" secondAttribute="bottom" constant="10" id="4Ze-aM-wJ9"/>
+                    <constraint firstItem="SK0-Ny-SnJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8CB-BJ-92U"/>
+                    <constraint firstItem="hca-ey-Sz5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MlP-Aa-LTl"/>
+                    <constraint firstItem="MlT-z3-nvc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Prt-hG-3X0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hca-ey-Sz5" secondAttribute="bottom" constant="10" id="gfD-5d-AX9"/>
+                    <constraint firstItem="SK0-Ny-SnJ" firstAttribute="top" secondItem="MlT-z3-nvc" secondAttribute="bottom" constant="10" id="rcE-uA-9Mf"/>
+                    <constraint firstItem="MlT-z3-nvc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wyF-RJ-8bX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="userImageView" destination="MlT-z3-nvc" id="9cL-Ju-dtn"/>
+                <outlet property="userNameLabel" destination="zJq-G5-9ue" id="SbX-2I-2oV"/>
+            </connections>
+            <point key="canvasLocation" x="117.39130434782609" y="192.1875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="folder.fill.badge.gearshape" catalog="system" width="128" height="94"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
